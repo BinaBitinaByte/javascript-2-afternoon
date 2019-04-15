@@ -47,7 +47,8 @@ let favoriteThings={
   After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 */
 
-favoriteThings.car = "tesla";
+favoriteThings.car = "ModelS";
+favoriteThings.brand = "Tesla";
 
 
 
@@ -57,6 +58,7 @@ favoriteThings.car = "tesla";
 
 
 favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 ////////// PROBLEM 3 //////////
@@ -71,16 +73,19 @@ favoriteThings.food = "Chicken Nuggets";
 
 
 let backPack={};
-
 var item = "firstPocket";
-
-backPack["item"] = "chapstick";
+backPack.firstPocket = "chapstick";
+backPack.color = "black"
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
-console.log(backPack);
+backPack = {
+  firstPocket: "chapstick", 
+  color: "black"
+}
+alert(backPack);
 
 
 
@@ -91,7 +96,11 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+backPack = {
+  firstPocket: "chapstick",
+  color: "black"
+};
+console.log(backPack);
 
 
 ////////// PROBLEM 4 //////////
@@ -138,7 +147,7 @@ user2.email = 'tyler.mcginnis@devmounta.in'
 */
 
 //Code Here
-
+let methodCollection = {}
 
 
 /*
@@ -148,7 +157,12 @@ user2.email = 'tyler.mcginnis@devmounta.in'
 
 //Code Here
 
-
+methodCollection.alertHello = function(){
+  alert ("hello");
+}
+methodCollection.logHello = function(){
+  console.log("hello")
+}
 
 /*
   Now call your alertHello and logHello methods.
